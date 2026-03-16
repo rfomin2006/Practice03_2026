@@ -1,3 +1,5 @@
+#define ARR_SIZE 5
+
 #include <stdio.h>
 #include <string.h>
 
@@ -26,7 +28,6 @@ int* bubble_sort(int* arr, int size) {
 }
 
 int main(void) {
-    const int ARR_SIZE = 5;
     int array[ARR_SIZE] = {5, 1, 4, 2, 8};
     print_array(array, ARR_SIZE);
     int stats[2];
