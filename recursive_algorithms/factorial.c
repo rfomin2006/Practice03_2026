@@ -4,8 +4,9 @@ int fact(int);
 
 int main() {
     int n;
+    printf("Input number: ");
     scanf("%d", &n);
-    printf("%d", fact(n));
+    printf("Factorial of this number is: %d", fact(n));
     return 0;
 }
 
