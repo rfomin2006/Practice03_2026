@@ -1,0 +1,1 @@
+add_executable(recursive_factorial factorial.c)
