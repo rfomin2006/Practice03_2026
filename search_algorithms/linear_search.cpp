@@ -3,12 +3,7 @@
 #include <string>
 #include <sstream>
 
-int linear_search(std::vector<int> arr, int val) {
-    for (size_t i = 0; i < arr.size(); i++) {
-        if (arr[i] == val) return i; 
-    }
-    return -1;
-}
+int linear_search(std::vector<int> arr, int val);
 
 int main() {
     std::vector<int> array;
@@ -24,4 +19,11 @@ int main() {
     res = linear_search(array, num);
     std::cout << (res != -1 ? "Element index is " + std::to_string(res) : "Element not found!");
     return 0;
+}
+
+int linear_search(std::vector<int> arr, int val) {
+    for (size_t i = 0; i < arr.size(); i++) {
+        if (arr[i] == val) return i; 
+    }
+    return -1;
 }
