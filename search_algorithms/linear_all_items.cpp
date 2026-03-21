@@ -3,7 +3,7 @@
 #include <string>
 #include <sstream>
 
-std::vector<int> linear_search(std::vector<int> arr, int val);
+std::vector<int> linear_search(std::vector<int> &arr, int val);
 
 int main() {
     std::vector<int> array;
@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 
-std::vector<int> linear_search(std::vector<int> arr, int val) {
+std::vector<int> linear_search(std::vector<int> &arr, int val) {
     std::vector<int> indexes;
     for (size_t i = 0; i < arr.size(); i++) {
         if (arr[i] == val) indexes.push_back(i); 
