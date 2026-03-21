@@ -1,1 +1,2 @@
 add_executable(linear_search linear_search.cpp)
+add_executable(linear_search_all linear_all_items.cpp)
